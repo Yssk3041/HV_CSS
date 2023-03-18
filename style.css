@@ -1,0 +1,147 @@
+* {
+  width: 98%;
+  margin: 10px;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    to left top,
+    white 38%,
+    rgb(231, 207, 223) 68%,
+    rgb(83, 149, 187) 90%
+  );
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.contenido {
+  position: relative;
+  box-shadow: 7px 7px 15px #592a08;
+  overflow: hidden;
+}
+
+#parteArriba {
+  display: grid;
+  height: 180px;
+  grid-template-columns: 35% 30% 30%;
+  width: 100%;
+  margin: auto;
+  border-bottom: 2px solid black;
+}
+
+#inicio {
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+#centro {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
+#fotoPerfil {
+  border-radius: 50%;
+  border: 3px solid rgb(83, 149, 187);
+  height: 140px;
+  width: 110px;
+  margin: 0;
+}
+
+#centro h1,
+p {
+  align-items: start;
+  margin: 0;
+}
+
+#final {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  width: 100%;
+}
+
+#sobreMi {
+  border-bottom: 2px solid black;
+  width: 99%;
+  text-align: justify;
+}
+.ladoIzquierdo{
+  display: grid;
+  width: 30%;
+  margin: 5px;
+}
+
+.info {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  border: 2px solid black;
+}
+.info section {
+  display: flex;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.info img {
+  height: 32px;
+  width: 40px;
+  vertical-align: middle;
+  margin: 0;
+  margin-bottom: 3px;
+}
+
+.info p,
+a {
+  display: inline-block;
+  margin: 0;
+  text-align: start;
+  margin-left: 5px;
+}
+
+strong {
+  margin: 0;
+}
+
+.info h2 {
+  border-bottom: 1px solid black;
+}
+
+
+.skills h2{
+  text-align: left;
+}
+.skills h2 img {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.skills table {
+  width: 100%;
+  table-layout: fixed;;
+  border-collapse: collapse;
+  border: 3px solid purple;
+  margin: 0;
+}
+
+
+.skills td,tr{
+  margin: 0;
+}
+
+p :hover {
+  color: rgb(118, 56, 128);
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: #592a08;
+}
