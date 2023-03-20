@@ -22,12 +22,13 @@ body {
   position: relative;
   box-shadow: 7px 7px 15px #592a08;
   overflow: hidden;
+  min-width: 300px;
 }
 
 #parteArriba {
   display: grid;
   height: 180px;
-  grid-template-columns: 35% 30% 30%;
+  grid-template-columns: 25% 50% 24%;
   width: 100%;
   margin: auto;
   border-bottom: 2px solid black;
@@ -49,17 +50,22 @@ body {
 #fotoPerfil {
   border-radius: 50%;
   border: 3px solid rgb(83, 149, 187);
-  height: 140px;
-  width: 110px;
-  margin: 0;
+  margin-left: 25px;
+  height: 180px;
+  width: 170px;
+  margin-top: 0;
 }
 
-#centro h1,
-p {
+#centro h1 {
   align-items: start;
+  font-size: 3em;
   margin: 0;
 }
 
+#centro p {
+  font-style: oblique;
+  font-size: 2em;
+}
 #final {
   grid-column-start: 3;
   grid-column-end: 4;
@@ -71,10 +77,10 @@ p {
   width: 99%;
   text-align: justify;
 }
-.ladoIzquierdo{
+.contenido-informacion {
   display: grid;
-  width: 30%;
-  margin: 5px;
+  border: 2px solid black;
+  grid-template-columns: 38% 61%;
 }
 
 .info {
@@ -82,12 +88,15 @@ p {
   justify-content: left;
   flex-direction: column;
   align-items: center;
-  text-align: justify;
-  border: 2px solid black;
+  text-align: center;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 .info section {
   display: flex;
   vertical-align: middle;
+  align-items: center;
+  justify-content: center;
   margin: 0;
 }
 
@@ -95,15 +104,14 @@ p {
   height: 32px;
   width: 40px;
   vertical-align: middle;
-  margin: 0;
-  margin-bottom: 3px;
+  margin-left: 20px;
 }
 
 .info p,
 a {
   display: inline-block;
   margin: 0;
-  text-align: start;
+  text-align: center;
   margin-left: 5px;
 }
 
@@ -111,37 +119,49 @@ strong {
   margin: 0;
 }
 
-.info h2 {
+h2 {
   border-bottom: 1px solid black;
-}
-
-
-.skills h2{
-  text-align: left;
-}
-.skills h2 img {
-  height: 30px;
-  width: 30px;
-  display: inline-block;
+  text-align: center;
   vertical-align: middle;
 }
 
-.skills table {
-  width: 100%;
-  table-layout: fixed;;
-  border-collapse: collapse;
-  border: 3px solid purple;
-  margin: 0;
+.ico-h2 {
+  height: 33px;
+  width: 33px;
+  vertical-align: middle;
 }
 
-
-.skills td,tr{
-  margin: 0;
+.skills {
+  display: flex;
+  flex-direction: column;
 }
-
-p :hover {
+.lista li {
+  list-style: none;
+}
+.lista ol li {
+  list-style-image: url(images/icons/listas.png);
+  list-style-position: inside;
+  vertical-align: middle;
+}
+.jobs {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-column-end: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.perfil :hover {
   color: rgb(118, 56, 128);
   cursor: pointer;
   text-decoration: underline;
   text-decoration-color: #592a08;
+}
+
+@media (min-width: 350px) {
+  .contenido-informacion {
+    grid-template-columns: 1;
+    grid-template-rows: repeat(1fr);
+  }
 }
