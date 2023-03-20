@@ -17,6 +17,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  flex-wrap: wrap;
 }
 .contenido {
   position: relative;
@@ -26,25 +27,14 @@ body {
 }
 
 #parteArriba {
-  display: grid;
-  height: 180px;
-  grid-template-columns: 25% 50% 24%;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: auto;
+  width: auto;
   margin: auto;
   border-bottom: 2px solid black;
-}
-
-#inicio {
-  width: 100%;
-  grid-column-start: 1;
-  grid-column-end: 2;
-}
-#centro {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  width: 100%;
-  text-align: center;
-  display: block;
 }
 
 #fotoPerfil {
@@ -56,20 +46,15 @@ body {
   margin-top: 0;
 }
 
-#centro h1 {
+h1 {
   align-items: start;
   font-size: 3em;
   margin: 0;
 }
 
-#centro p {
+#parteArriba p {
   font-style: oblique;
   font-size: 2em;
-}
-#final {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  width: 100%;
 }
 
 #sobreMi {
@@ -151,6 +136,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 .perfil :hover {
   color: rgb(118, 56, 128);
@@ -161,7 +147,6 @@ h2 {
 
 @media (min-width: 350px) {
   .contenido-informacion {
-    grid-template-columns: 1;
-    grid-template-rows: repeat(1fr);
+    flex-wrap: wrap;
   }
 }
