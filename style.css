@@ -177,7 +177,7 @@ h2 {
     margin: 0;
   }
   #sobreMi {
-    background-color: rgb(231, 193, 231);
+    background-color: rgb(226, 194, 226);
   }
   .contenido-informacion {
     display: flex;
@@ -203,7 +203,6 @@ h2 {
 
   #fotoPerfil {
     border-radius: 50%;
-    background-color: rgb(231, 207, 223);
     margin-left: 25px;
     height: 180px;
     width: 160px;
@@ -221,7 +220,7 @@ h2 {
     align-items: center;
   }
   #sobreMi {
-    background-color: rgb(218, 215, 216);
+    background-color: rgb(231, 215, 226);
   }
   .info .section {
     margin: 20px;
